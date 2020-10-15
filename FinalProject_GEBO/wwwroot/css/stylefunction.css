@@ -1,0 +1,136 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif,"微軟正黑體";
+}
+
+.topic {
+  font-size: 2.5em;
+}
+
+body {
+  background-color: #FFFDE7;
+  color: #5C4938;
+}
+
+.top {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  color: #5C4938;
+
+}
+
+.topimgpic {
+  width: 58.331%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 20px 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+/* 使連結不要出現藍色的 */
+.container a {
+  text-decoration: none;
+}
+
+.container .box {
+  position: relative;
+  width: 200px;
+  padding: 20px;
+  background: #FB7E60;
+  border-radius: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* icon部分 */
+.container .box .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #f0be2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+
+.container .box:hover .icon {
+  box-shadow: 0 0 0 400px #008F95;
+}
+
+.content {
+  font-size: 20px;
+  color: #5C4938;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.container .box:hover .content {
+  color: white;
+}
+
+/* 當在螢幕時RWD */
+
+@media screen and (max-width: 480px) {
+  .topictitle {
+    font-size: 2em;
+  }
+
+  .topimgpic {
+    width: 48.331%;
+    ;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .topictitle {
+    font-size: 1.5em;
+  }
+
+  .topimgpic {
+    width: 58.331%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .topictitle {
+    font-size: 2em;
+  }
+
+  .topimgpic {
+    width: 58.331%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .topictitle {
+    font-size: 2.5em;
+  }
+
+  .topimgpic {
+    width: 38.331%;
+  }
+}

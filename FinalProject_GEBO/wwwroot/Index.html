@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GEBO你的專屬管家</title>
+    <link href="../images/icon.ico" type="img/x-ico" rel="icon">
+        <link rel="stylesheet" href="css/styleindex.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+</head>
+<body>
+    <section id ="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#"><img src="images/logo2.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idea">Idea</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#function">Function</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About us</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                    <li id="nav_item" class="nav-item">
+                       <a id="nav_item_login"class="nav-link login" href="html/login.html">Log in</a>
+                       <a id="logout" onclick="clearsession()" class="nav-link logout" href="html/login.html" style="display: none;">登出</a>
+                        </li>
+                    </ul>
+                    </div>
+                    </nav>
+    </section>
+    <!-------------- banner -------------------->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+                <p class="topic-title">GEBO</p>
+                <p class="container-title">你的專屬管家 - 記錄你的未來目標、零碎小事、記帳等等完善功能，使雜亂繁瑣的事更加系統化，另外還有心情日記寫下自己的喜怒哀樂，給予你更完善的網站做最真實的寫照。</p>
+                <div class= "gotostart"><a  class="start at_top" id="getstarted">Get Started</a></div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/indeximg.png" class="img-fluid">
+            </div>
+            </div>
+        </div>
+        <img src="images/wave1.png" class="bottom-img">
+    </section>
+    <!-------------------- idea ------------------->
+    <section id = "idea">
+        <div class="container">
+        <h1 class="title">設計理念</h1>
+        <div class="row text-center">
+        <div class="col-md-4 idea">
+            <img src="images/pic04.png" class="idea-img">
+            <h5>規劃目標</h5>
+            <p class="text-idea">將自己的目標做規劃，從過去訂下目標比對現今完成與否，看出自己該為何種目標努力。</p>
+        </div>
+        <div class="col-md-4 idea">
+            <img src="images/pic02.png" class="idea-img">
+            <h5>紀錄生活</h5>
+            <p class="text-idea">紀錄自己的生活，不怕資料遺失，可以隨時為生活記錄下美好的回憶！</p>
+        </div>
+        <div class="col-md-4 idea">
+            <img src="images/pic03.png" class="idea-img">
+            <h5>努力不懈</h5>
+            <p class="text-idea">勤奮寫下生活中的點滴，回頭來看自己努力的過程，更會不斷的精益求精。</p>
+        </div>
+        </div>
+
+        </div>
+    </section>
+    <!---------------funcion---------------->
+    <section id ="function">
+    <div class="container">
+    <h1 class="title">功能簡介</h1>
+    <div class="row">
+    <div class="col-md-6 function">
+    <h5>五大功能介紹</h5>
+        <ul>
+            <li>目標 - 登記你的目標，便可勾選有無完成。</li>
+            <li>計畫 - 行事曆形式，登記你每日的規劃。</li>
+            <li>日記 - 提供每日日記，寫下你的每日心情。</li>
+            <li>存錢 - 將自己收支作登記，以方便查看。</li>
+            <li>紀錄 - 有自己的清單，將清單做歸類。</li>
+        </ul>
+        
+    </div>
+    <div class="col-md-6">
+        <img src="images/indeximg.png" class="img-fluid">
+    </div>
+    </div>
+    </div>
+    
+    </section>
+    <!----------about us--------->
+    <section id="aboutus">
+        <img src="images/wave2.png" class="bottom-img">
+        <div class="container">
+        <h1 class="titleabout">關於我們</h1>
+        <div class = "row" >
+        <div class="col-md-3 testcontain">
+            <p></p>
+            <img src="images/final1.jpg">
+            <p class="user-details"><b class="nametitle">賴宜君</b><br>主視覺設計、網站外觀、記帳功能撰寫</p>
+        </div>
+        <div class="col-md-3 testcontain">
+            <p></p>
+            <img src="images/final2.jpg">
+            <p class="user-details"><b class="nametitle">李嘉倩</b><br>紀錄清單功能撰寫、後端資料建立</p>
+        </div>
+        <div class="col-md-3 testcontain">
+            <p></p>
+            <img src="images/final3.jpg">
+            <p class="user-details"><b class="nametitle">廖子萱</b><br>日記資料、年度目標撰寫、後端資料建立</p>
+        </div>
+        <div class="col-md-3 testcontain">
+            <p></p>
+            <img src="images/final4.jpg">
+            <p class="user-details"><b class="nametitle">劉品萱</b><br>月計畫功能撰寫</p>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- smootj scroll -->
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+
+    <footer class="bottomtext">
+        <p>Design By GEBO-Team</p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+<script src="./js/index.js"></script>
+<script  type="text/javascript"  >
+ 
+    function setsession(mid) {
+      console.log('setsession:');
+      console.log(mid)
+      $.session.set("MemberId", mid)
+      Redirect()
+    }
+    //#endregion
+    //#region --設定session(set)
+    function getsession() {
+      console.log('getsession:');
+      console.log($.session.get("MemberId"))
+    }
+  </script>
+</body>
+</html>

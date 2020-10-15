@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif, "微軟正黑體";
+}
+
+body {
+    background-color: #FFFDE7;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-color: #f0be2f;
+    padding: 10px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: #5C4938;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars {
+    color: #5C4938;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    outline: none;
+}
+
+input,
+textarea {
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 15px;
+}
+
+/* top: topic/calender */
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.top {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #5C4938;
+}
+
+.top .show-year {
+    font-size: 32px;
+    color: #FB7E60;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+/* middle : */
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #008F95;
+    border-radius: 20px;
+    padding: 20px 30px;
+    align-content: center;
+}
+
+.middle .middle-text {
+    width: 80vw;
+    position: relative;
+    margin: 20px;
+}
+
+
+.middle .date-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle .date-area .label-date {
+    font-size: 20px;
+    color: #FFFDE7;
+    margin: 20px;
+}
+
+.middle .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F0BE22;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.middle .btn i {
+    font-size: 16px;
+}
+
+/* buttom */
+.buttom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FB7E60;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    align-content: center;
+}
+
+.buttom .goal-list {
+    background-color: #5C4938;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.buttom .goal-content {
+    width: 35vw;
+    
+}
+.buttom .list-btngroup{
+    display: flex;
+    flex-wrap:wrap;
+    margin:auto;
+}
+.buttom .list-date{
+    margin-left: 10px;
+}
+.buttom .list-btn {
+    background-color: #F0BE22;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.list-btn.disabled {
+    background-color:#F0BE22;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 2px;
+    cursor: default;
+}
+.buttom .list-btn i {
+    font-size: 12px;
+    position: absolute;
+    left: 53%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+}
+.unedit{
+    background-color: #5C4938;
+    color:#FFFDE7 ;
+
+}
+
+.complete>input {
+
+  color: #008F95;
+    
+  }
+/* ----------用來移除向下箭頭----------
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+} */
+
+/*----------用來移除上下箭頭----------*/
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/*----------用來移除叉叉按鈕----------*/
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}

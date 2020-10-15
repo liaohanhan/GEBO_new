@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增</title>
+    <!-- <link href="./css/monthplan.css" rel="stylesheet" type="text/css"> -->
+    <link href="./css/InsertStyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+</head>
+
+<body>
+    <div class="right-blank">
+    <div class="top">
+        <div class="addmp" id="close" onclick="close()"><i class="fas fa-times"></i></div>
+    </div>
+    <div class="title">
+        <h1>新增項目</h1>
+    </div>
+    <div class="select-plan">
+        <h3>請選擇新增月計畫或新增行程</h3>
+        <div>
+
+            <input type="radio" name="radio" value="monthplan">新增月計畫<br>
+            <input type="radio" name="radio" value="schedule">新增行程<br>
+        </div>
+        <div class="mp01 box bBW" style="display:show;">
+            <div class="middle-content">
+                <h3>新增月計畫</h3>
+                <!-- class=select_ag外觀要改 -->
+                <div class="select_ag">有無依循年度目標新增月計畫?
+                    <select id="selectAg"></select>
+                    <option value="null">無</option>
+                    <!-- <input type="list" datalist="selectAgdata" id="selectAg"/>
+            <datalist id="selectAgdata"></datalist> -->
+                </div>
+                <p>標題：</p>
+                <input type="text" id="titlem" required><br>
+                <p>內容：</p>
+                <input type="text" id="content"><br>
+                <p>日期：</p>
+                <input type="date" id="begindate" required>~
+                <input type="date" id="enddate" required><br>
+                <div class = "all-btn">
+                <div class="confirm" id="confirmonlyplan" onclick="confirm3()"><i class="fa fa-check"></i></div>
+                <div class="confirm" id="mp_reset"><i class="fas fa-redo-alt"></i></div>
+                <label> <input type="checkbox" value="IsRelatedtoPlan" />是否新增此月計畫之行程</label>
+            </div>
+        </div>
+        <div id="Plan_SC" class="mp01 box bBW" style="display:show;">
+            <div class="middle-content">
+
+                <h3> 新增此月計畫之行程</h3>
+                <p>名稱：</p>
+                <input type="text" id="titles" /><br>
+                <p>日期：</p>
+                <input type="date" id="dates" />
+                <p>時間：</p>
+                <input type="time" id="begintime">~
+                <input type="time" id="endtime"><br>
+                <div class="confirm" onclick="confirm()"><i class="fa fa-check"></i></div>
+                <div class="confirm" id="mpsc_reset"><i class="fas fa-redo-alt"></i></div>
+            </div>
+        </div>
+        <div id="div_addsc" class="mp02 box bBW">
+            <div class="middle-content">
+                <h3>新增行程</h3>
+                <p>名稱：</p>
+                <input type="text" id="titlesc"><br>
+                <p>日期：</p>
+                <input type="date" id="datesc" />
+                <p>時間：</p>
+                <input type="time" id="begintimesc">~
+                <input type="time" id="endtimesc"><br>
+                <div class="confirm" onclick="confirm2()"><i class="fa fa-check"></i></div>
+                <div class="confirm" id="sc_reset"><i class="fas fa-redo-alt"></i></div>
+
+
+
+            </div>
+
+        </div>
+
+        <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+
+        <script src="./js/monthplan.js"></script>
+        <script src="./js/Insert.js"></script>
+</body>
+
+</html>

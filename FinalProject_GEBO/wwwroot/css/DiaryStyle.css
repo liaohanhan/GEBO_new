@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif, "微軟正黑體";
+}
+body{
+    background-color: #FFFDE7;
+}
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-color: #f0be2f;
+    padding: 10px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: #5C4938;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars {
+    color: #5C4938;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    outline: none;
+}
+input,
+textarea {
+    background-color:#fff;
+    border: none;
+    padding: 15px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+/* top: topic/calender */
+
+.top {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #5C4938;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.datetop{
+    font-size: 35px;
+    font-weight: 500;
+    color: #008F95;
+}
+.bottom-img{
+    width: 100%;
+    height:70%;
+}
+.title{
+    color: #fff;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+input [type="date"]{
+    margin-top :0px;
+}
+/* question diary:question /answer/button */
+.section2{
+    position: relative;
+    overflow: hidden;
+    margin: 0px 30px;
+    padding: 10px;
+    width: 70%;
+
+}
+.questiontopic{
+    font-size: 24px;
+    color:#FFFDE7; 
+    cursor: pointer;
+}
+button {
+    border-radius: 20px;
+    background-color: #5C4938;
+    border:0 none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-transform: uppercase; 
+  }
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ 
+.ground {
+    position:flex;
+    padding: 30px;
+}
+.ground.questionground{
+    background-color: #008F95;
+    border-radius: 5px;
+}
+.ground.diaryground{
+    background-color: #FB7E60;
+    border-radius: 5px;1
+}
+.A{
+    font-size: 24px;
+    font-weight: 500;
+    color:#FFFDE7;
+}

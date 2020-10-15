@@ -1,0 +1,261 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif,"微軟正黑體";
+}
+#nav-bar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar{
+  background-color: #f0be2f;
+  padding: 10px;
+}
+.navbar-brand img{
+  height: 40px;
+  padding-left: 20px;
+}
+.navbar-nav li{
+  padding: 0 10px;
+}
+.navbar-nav li a{
+  color: #5C4938;
+  float: right;
+  text-align: left;
+}
+.fa-bars{
+  color: #5C4938;
+  font-size: 30px;
+}
+.navbar-toggler{
+  outline: none;
+}
+.navbar-nav li a{
+  color: #5C4938 !important;
+  float: right;
+  text-align: left;
+  text-transform: uppercase;
+}
+.fa-bars{
+  color: #5C4938;
+  font-size: 30px !important;
+}
+.navbar-toggler{
+  outline: none !important;
+}
+input{
+  background-color:#fff;
+  border: none;
+  padding: 10px;
+  border-radius:10px ;
+}
+select{
+  border: none;
+  padding: 15px;
+}
+/* banner */
+#banner{
+  padding: 5vh auto;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 900;
+}
+.top {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFDE7;
+  color: #5C4938;
+  margin-top: auto;
+}
+.top .date-top{
+  color:#008F95;
+  font-size: 32px; 
+}
+.top .expense-topic{
+  margin: 20px auto 0px;
+  color:#FB7E60;
+  font-weight: 600;
+}
+.top .expense-value{
+  align-items: center;
+  font-size: 50px; 
+  margin: 0;
+}
+
+
+.middle {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  background-color: #5C4938;
+}
+.middle .select {
+  position: relative;
+  margin-right: 16px;
+}
+.middle .item {
+  width: 200px;
+  padding: 4px;
+  margin-right: 16px;
+}
+.middle .value {
+  width: 100px;
+  padding: 4px;
+  margin-right: 16px;
+}
+.middle .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F0BE22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.middle .btn i {
+  font-size: 16px;
+}
+
+
+.center-btn{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto; 
+}
+
+.center-btn .check-month{
+  border-radius: 40px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  background-color: #5C4938;
+  border:0 none;
+  cursor: pointer;
+}
+
+
+.bottom {
+  background-color: #F0BE22;
+  display: flex;
+  justify-content: center;
+}
+.bottom .box {
+  width: 400px;
+  text-align: center;
+  margin: 25px 16px 40px;
+}
+.bottom .box .box-title {
+  padding: 8px 0;
+}
+.bottom .box .box-income-title {
+  background-color: #008F95;
+  color: #fff;
+  
+}
+.bottom .box .box-expense-title {
+  background-color: #FB7E60;
+  color: #fff;
+}
+.bottom .box .box-container{
+  background-color: #FFFDE7;
+  box-sizing: border-box;
+}
+
+.bottom .box .box-container .content-area{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5C4938;
+  border-bottom:solid 2px #5C4938;
+  padding: 0;
+  margin:0;
+}
+
+.bottom .box .box-container .content-area.inside-content,.inside-title{
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+  margin:auto 5px ;
+  flex-direction: row ;
+  width: 50px;
+}
+.bottom .box .box-container .content-area .inside-content .input-content{
+  background-color: #FFFDE7;
+  padding: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+.bottom .box .box-container .content-area .list-btngroup{
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.bottom .box .box-container .content-area .list-btngroup .list-btn {
+  background-color: #F0BE22;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left:5px;
+  cursor: pointer;
+}
+
+/* .bottom .box .box-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  color: #5C4938;
+  
+}
+.bottom .box .box-income.item {
+  border: 1px solid #008F95;
+  border-top: none;
+}
+.bottom .box .box-expense.item {
+  border: 1px solid #FB7E60;
+  border-top: none;
+} */
+
+/* .item-value-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-value-box .delete {
+  background-color: #008F95;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.item-value-box .delete.expense-item-button {
+  background-color: #FB7E60;
+}
+.item-value-box i {
+  font-size: 12px;
+  position: absolute;
+  left: 53%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+}
+.disabled>input[type='text']
+{
+  pointer-events: none;
+  
+} */
+
+

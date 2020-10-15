@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>GEBO-記帳</title>
+  <link href="../images/icon.ico" type="img/x-ico" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/stylecalcul.css">
+</head>
+
+<body>
+
+    <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="../images/logo2.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            功能
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./AnnualGoal.html">目標</a>
+                            <a class="dropdown-item" href="../monthplan.html">計畫</a>
+                            <a class="dropdown-item" href="../Diary.html">日記</a>
+                            <a class="dropdown-item" href="../calculate.html">記帳</a>
+                            <a class="dropdown-item" href="../ItemList.html">紀錄</a>
+                        </div>
+                    </li>
+                </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a id="logout" onclick="clearsession()" class="nav-link logout" href="../html/login.html">登出</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!-- top topic / calender / date / 支出textbox / 預算textbox/ 輸出餘額label-->
+  <div class="top">
+    <h1>記帳收支表</h1>
+    <p id="date" class="date-top"></p>
+      <input type="date" id="date-click" class="dateclick" placeholder="yyyy/mm/dd" />
+      <p id="expense" class="expense-topic">今日花費</p>
+      <p id="expense2" class="expense-value">0</p>
+      <!-- <input class="salary" id='name' placeholder="本月預算" /> -->
+  </div>
+
+  <div class="middle">
+    <select id="select_status" class="select">
+      <option value="exp">支出</option>
+      <option value="inc">收入</option>
+    </select>
+    <input id="item_name"class="item" type="text" placeholder="項目名稱" />
+    <input id="price"class="value" type="number" placeholder="金額" />
+    <div id="add_btn" class="btn" ><i class="fa fa-check"></i></div>
+  </div>
+  <div class ="center-btn">
+    <button class="check-month" onclick="location.href='./calculatereport.html'">查看月報表</button>
+  </div> 
+  <div class="bottom">
+    <div class="box income-box">
+      <div class="box-title box-income-title">收入</div>
+      <div id="income_div" class="box-container"></div>
+    </div>
+    <div class="box expense-box">
+      <div class="box-title box-expense-title">支出</div>
+      <div id="expense_div" class="box-container">
+        <!-- <div id ="area">
+          <input type ="text" id = "money-content">
+          <input type ="text" id = "list-content">
+        </div>
+        <div class = "list-btngroup">
+          <button id="complete"></button>
+          <button id="edit"></button id="edit">
+          <button id="delete"></button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="bottom-bar"></div> -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+  <script type="text/javascript"></script>
+  <script src="../js/calculate.js"></script>
+ 
+
+</body>
+
+
+</html>

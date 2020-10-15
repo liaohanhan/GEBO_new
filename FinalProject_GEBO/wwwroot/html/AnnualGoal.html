@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>年度目標</title>
+    <link href="../images/icon.ico" type="img/x-ico" rel="icon">
+    <link rel="shortcut icon" href="#" />
+    <!-- <link href="htatps://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/AnnualGoalStyle.css">
+</head>
+
+<body>
+    <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="../images/logo2.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            功能
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../html/AnnualGoal.html">目標</a>
+                            <a class="dropdown-item" href="./monthplan.html">計畫</a>
+                            <a class="dropdown-item" href="../html/Diary.html">日記</a>
+                            <a class="dropdown-item" href="../html/calculate.html">記帳</a>
+                            <a class="dropdown-item" href="../html/ItemList.html">紀錄</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="logout" onclick="clearsession()" class="nav-link logout" href="../html/login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+    
+      </div>
+    </nav>
+  </section>
+    <div class="container">
+        <div class="top">
+            <h1>年度目標</h1>
+            <div id="Year">
+                <i id="minusyear"onclick="Minustopyear()" class="fas fa-angle-left" cursor: pointer;></i>
+                <label id="show_year" class="show-year"></label>
+                <i id="plusyear"onclick="Plustopyear()" class="fas fa-angle-right" cursor: pointer;></i>
+            </div>
+        </div>
+        <div class="middle" id="InputGoal">
+                <input type="text" id="AnnualGoal" class="middle-text"/>
+                <div class="date-area">
+                    <p class="label-date">起</p>
+                    <input type="date" id="startdate"/>
+                    <p class="label-date">迄</p>
+                    <input type="date" id="enddate"/>
+                </div>
+                <div class="btn" id="addannualgoal" onclick="InsertGoal()"><i class="fas fa-plus"></i></div>
+        </div>
+    
+        <div class= "buttom" id="goal_div">
+            
+            <!-- <div id="goal1" class="goal-list">
+                <input type="text" id="goalcontent" class="goal-content"/>
+                <input type="date" id="startdate1" class="list-date"/>
+                <input type="date" id="enddate1" class="list-date"/>
+                <div class = "list-btngroup"> 
+                <div id="complete" class="list-btn"><i class="fas fa-check"></i></div>
+                <div id="edit" class="list-btn"><i class="fas fa-edit"></i></div>
+                <div id="delete" class="list-btn"><i class="fas fa-trash-alt"></i></div>
+            </div>
+            </div> -->
+        </div>
+        <div class="buttom" id="goal_div_complete">
+            
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+    <script src="../js/AnnualGoal.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

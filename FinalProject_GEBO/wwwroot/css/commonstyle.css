@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    box-sizing: border-box;
+    /*font-family: "Open Sans", sans-serif,"微軟正黑體";*/
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-color: #f0be2f;
+    padding: 10px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+    
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+    .navbar-nav li a {
+        color: #5C4938;
+        float: right;
+        text-align: left;
+    }
+
+.fa-bars {
+    color: #5C4938;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    outline: none;
+}
+
+.navbar-nav li a {
+    color: #5C4938 !important;
+    float: right;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.fa-bars {
+    color: #5C4938;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+

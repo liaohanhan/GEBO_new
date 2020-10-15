@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>GEBO-問題日記</title>
+  <link href="../images/icon.ico" type="img/x-ico" rel="icon">
+  <link rel="shortcut icon" href="#" />
+ <!-- <link href="htatps://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  --><link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/DiaryStyle.css">
+</head>
+
+<body>
+    <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="../images/logo2.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            功能
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../html/AnnualGoal.html">目標</a>
+                            <a class="dropdown-item" href="./monthplan.html">計畫</a>
+                            <a class="dropdown-item" href="../html/Diary.html">日記</a>
+                            <a class="dropdown-item" href="../html/calculate.html">記帳</a>
+                            <a class="dropdown-item" href="../html/ItemList.html">紀錄</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="logout" onclick="clearsession()" class="nav-link logout" href="../html/login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+    
+      </div>
+    </nav>
+  </section>
+  <!-- top: topic/calender-->
+  <div class="top section1">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>日記</h1>
+        <p id="date" class="datetop"></p>
+        <input type="date" id="dates" class="dateclick" placeholder="yyyy/mm/dd" />
+      </div>
+    </div>
+
+
+    <!-- question diary:question /answer/button-->
+    <div class="top section2">
+        <div class="row">
+            <div class="col-md-12 ground questionground">
+                <h2 class="title">問題日記</h2>
+                <p id="Quenstion" class="questiontopic"></p>
+                <!-- <div id=Answer_div style="display:none;"> -->
+                <div id="Show__answer" class="A"></div>
+                <div id=Answer_div>
+                    <input type="text" id="Answer" class="answertext" placeholder="輸入你的回答" />
+                    <button id="Answer_confirm" onclick="InsertAnswer()">確認</button>
+                    <button id="Answer_cancle" onclick="" style="display: none;">取消</button>
+                </div>
+
+            </div>
+            <!-- diary:text/button-->
+            <div class="col-md-12 ground diaryground" id="Diary">
+                <h2 class="title">一般日記</h2>
+                <div id="Show__diarycontent" class="A"></div>
+                <div id=Diary_div>
+                    <textarea cols="40" rows="8" name="textarea" id="Diary_content" placeholder="寫下今天的日記"></textarea>
+                    <button id="Diary_confirm" onclick="InsertDiary()">確認</button>
+                   <button id="Diary_cancle" onclick="" style="display: none;">取消</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- diary:/text/button -->
+
+    <footer></footer>
+
+ 
+  
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+    <script src="../js/Diary.js"></script>
+
+</body>
+
+</html>

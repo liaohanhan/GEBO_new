@@ -1,0 +1,113 @@
+/*隱藏區塊用*/
+.box {
+    display: none;
+}
+
+/*秀出區塊用*/
+.mp01 {}
+
+.mp02 {}
+
+/*區塊範圍指定*/
+.bBW {}
+
+/* Insert.html decorate */
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif, "微軟正黑體";
+}
+
+body {
+    background-color: #FFFDE7;
+}
+
+input,
+textarea {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* title */
+.title {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #FB7E60;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #5C4938;
+    font-size: 40px;
+    font-weight: 900;
+}
+h3{
+    color: #5C4938;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.select-plan {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f48691;
+    border-radius: 10px;
+}
+
+.middle-content {
+    margin: 10px;
+    padding: 20px;
+}
+.all-btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.confirm {
+    background-color: #f0be2f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.confirm i {
+    color: #5C4938;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display:inline-block;
+}
+.right-blank{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.right-blank .top{
+    margin: 10px auto;
+    display: flex;
+
+}
+.right-blank .top .addmp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F0BE22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>月計畫</title>
+    <link href="../images/icon.ico" type="img/x-ico" rel="icon">
+    <link rel="shortcut icon" href="#" />
+    <!-- <link href="htatps://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- <meta charset="UTF-8"> -->
+   
+    <!-- <link rel="shortcut icon" href="#" /> -->
+    <link href="../css/monthplan.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body onload="renderDate()">
+    <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="../images/logo2.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            功能
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../html/AnnualGoal.html">目標</a>
+                            <a class="dropdown-item" href="./monthplan.html">計畫</a>
+                            <a class="dropdown-item" href="../html/Diary.html">日記</a>
+                            <a class="dropdown-item" href="../html/calculate.html">記帳</a>
+                            <a class="dropdown-item" href="../html/ItemList.html">紀錄</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="logout" onclick="clearsession()" class="nav-link logout" href="../html/login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+    
+      </div>
+    </nav>
+  </section>
+    <!-- 新增月計畫或行程 -->
+  <div class="containers">
+    <div class = "left-blank">
+    <div class = "top"> 
+        <div class="addmp"onclick="add()"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="Menu" >
+        <ul class="all_year" id="ALL_YEAR">年度目標 </ul>
+        <ul class="all_year" id="OnlyPlan">獨立月計畫</ul>
+        <ul class="all_year" id="OnlySchedule">獨立行程</ul>    
+    </div>
+</div>
+    <!-- 行事曆 -->
+    <div class="wrapper">
+        <div class="calendar">
+            <div class="month">
+                <div class="prev" onclick="moveDate('prev')">
+                    <span>&#10094;</span></div>
+                <div>
+                    <h2 id="month"></h2>
+                    <p id="date_str"></p>
+                </div>
+                <div class="next" onclick="moveDate('next')">
+                    <span>&#10095;</span>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days"></div>
+        </div>
+    </div>
+<div id="iframe_insert" style="display: none;">
+    <iframe id="Insert_iframe"class="rightInsert " frameBorder="0" src="../Insert.html" >
+        
+    </iframe>
+</div>
+</div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+    <script src="../js/monthplan.js"></script>
+</body>
+
+</html>

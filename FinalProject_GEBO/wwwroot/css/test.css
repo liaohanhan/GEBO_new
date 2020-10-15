@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.top{
+    background-color: red;
+    
+    justify-content: flex-start;
+}
+.left{background-color: blue;
+    justify-content: flex-start;
+}
+.calendar{background-color: seagreen;
+    justify-content: center;
+    margin-right:20%;
+}
+.right{background-color: sienna;
+    justify-content: flex-end;
+    float: right;
+}

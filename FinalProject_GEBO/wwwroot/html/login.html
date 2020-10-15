@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>登入註冊</title>
+	<link href="../images/icon.ico" type="img/x-ico" rel="icon">
+	<link rel="shortcut icon" href="#" />
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'>
+	<link rel="stylesheet" href="../css/stylelogin.css">
+
+</head>
+
+<body>
+
+	<!-- partial:index.partial.html -->
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<div class="form">
+				<h1>註冊</h1>
+				<input type="text" id="name" placeholder="姓名" />
+				<input type="email" id="email" placeholder="Email" />
+				<input type="text" id="account2" placeholder="帳號" />
+				<input type="password" id="password2" placeholder="密碼"  />
+				<button id="submitsignin" >註冊</button>
+
+			</div>
+		</div>
+		<div class="form-container sign-in-container">
+			<div class="form">
+				<h1>登入</h1>
+				<input type="text" placeholder="帳號" id="account1" required minlength="3" maxlength="15"
+					pattern="[a-zA-Z0-9]+" />
+				<input type="password" name="password1" id="password1" class="password" placeholder="密碼" minlength="8"
+					maxlength="15" /><br />
+				<button id="submitlogin">登入</button>
+			</div>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>歡迎</h1>
+					<p>假如你有帳號趕快登入吧！</p>
+					<button class="ghost" id="signIn">登入</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>嗨摟</h1>
+					<p class="aboutcontain">趕快來申請一個帳號來加入我們吧！</p>
+					<button class="ghost" id="signUp">註冊</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="back" onclick="location.href='../index.html'">回首頁</button>
+	<!-- partial -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+	<script src="../js/scriptlogin.js"></script>
+
+</body>
+
+</html>
