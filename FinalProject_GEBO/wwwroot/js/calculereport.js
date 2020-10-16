@@ -1,7 +1,7 @@
 var today = new Date()
 var TotalIncome = 0
 var TotalExpense = 0
-var date = today.getFullYear() + "-" + today.getMonth() + 1
+var date = today.getFullYear() + "-" + (today.getMonth() + 1)
 var Render = new Array()
 $(document).ready(function () {
 

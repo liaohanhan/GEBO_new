@@ -7,7 +7,7 @@ namespace FinalProject_GEBO.Models
     {
         public int Id { get; set; }
         public int MemberId { get; set; }
-        public DateTime? Date { get; set; }
+        public DateTime Date { get; set; }
         public int? Budget { get; set; }
     }
 }

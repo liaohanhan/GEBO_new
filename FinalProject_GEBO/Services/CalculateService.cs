@@ -83,13 +83,14 @@ namespace FinalProject_GEBO.Services
         public int GetBudget(int memberId, string date)
         {
             try {
-                var budget = _conText.SaveReport.SingleOrDefault(x => x.MemberId == memberId
-                && x.Date.ToString().Substring(0, 10) == date).Budget;
-                if (budget != null)
-                {
-                    return (int)budget;
+                var savereport = _conText.SaveReport.SingleOrDefault(x => x.MemberId == memberId
+                 && x.Date.ToString().Substring(0, 10) == date);
+                var budget = 0;
+                if (savereport==null) {}
+                else { 
+                budget= (int)savereport.Budget;
                 }
-                else { return 0; }
+                return budget;
             } catch (Exception e) {
                 Console.WriteLine(e);
                 return -1;
